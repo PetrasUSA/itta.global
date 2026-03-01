@@ -19,10 +19,45 @@ html, body {
 }
 
 .contact {
-  background: #05070d;
+  background: linear-gradient(to bottom, #02050a, #05070d);
   color: white;
-  padding: 80px 20px;
+  padding: 100px 40px;
   text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-grid div {
+  padding: 25px;
+  border: 1px solid rgba(0, 170, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(0, 20, 40, 0.4);
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+}
+
+.contact-grid div:hover {
+  border-color: rgba(0, 170, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+.contact-grid span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8fd3ff;
 }
 
 /* Pagrindinis fonas – identiškas tavo paveikslui */
