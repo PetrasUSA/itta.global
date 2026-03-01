@@ -18,46 +18,38 @@ html, body {
   display: block;
 }
 
-.contact {
-  background: linear-gradient(to bottom, #02050a, #05070d);
-  color: white;
-  padding: 100px 40px;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 36px;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
-}
-
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
+  text-align: center;
 }
 
 .contact-grid div {
-  padding: 25px;
-  border: 1px solid rgba(0, 170, 255, 0.2);
-  border-radius: 12px;
-  background: rgba(0, 20, 40, 0.4);
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
   backdrop-filter: blur(6px);
-  transition: 0.3s ease;
 }
 
-.contact-grid div:hover {
-  border-color: rgba(0, 170, 255, 0.6);
-  transform: translateY(-5px);
-}
+/* ===== MOBILE FIX ===== */
 
-.contact-grid span {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #8fd3ff;
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
 }
 
 /* Pagrindinis fonas – identiškas tavo paveikslui */
